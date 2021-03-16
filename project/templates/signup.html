@@ -1,39 +1,31 @@
 <!-- templates/signup.html -->
-
 {% extends "base.html" %}
-
 {% block content %}
-<div class="column is-4 is-offset-4">
-    <h3 class="title">Sign Up</h3>
-    <div class="box">
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            <div class="notification is-danger">
-                {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.
-            </div>
-        {% endif %}
-        {% endwith %}
-        <form method="POST" action="/user/signup">
-            <div class="field">
-                <div class="control">
-                    <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="">
-                </div>main.index
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <input class="input is-large" type="password" name="password" placeholder="Password">
-                </div>
-            </div>
-            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
-            <button class="button is-block is-info is-large is-fullwidth">Sign Up</button>
-        </form>
-    </div>
-</div>
+<form class="form-signin" method="POST" action="/user/signup">
+   <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+   <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+   {% with messages = get_flashed_messages() %}
+   {% if messages %}
+   <div class="alert alert-primary" role="alert">
+      {{ messages[0] }}
+   </div>
+   {% endif %}
+   {% endwith %}
+   <label for="inputEmail" class="sr-only">Email address</label>
+   <input type="email" id="inputEmail" class="form-control" type="email" name="email" placeholder="Email" required="" autofocus="">
+   <label for="inputEmail" class="sr-only">Username</label>
+   <input type="text" id="inputUsername" class="form-control" type="text" name="name" placeholder="Username" required="" autofocus="">
+   <label for="inputPassword" class="sr-only">Password</label>
+   <input type="password" id="inputPassword" class="form-control" type="password" name="password" placeholder="Password" required="">
+   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+   {{ recaptcha }}
+   <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+   <small>
+      <p class="text-center ">If you already have an account use the <a href="/user/login">login form</a>
+   </small>
+   </p>
+   </hr>
+   <small class="text-muted"><a href="/">← Return to the homepage</a></small>
+   <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+</form>
 {% endblock %}

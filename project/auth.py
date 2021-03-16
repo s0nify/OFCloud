@@ -1,5 +1,7 @@
 # auth.py
 from datetime import datetime
+from smtplib import SMTPException
+
 from flask import Flask, Blueprint, render_template, redirect, url_for, request, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, logout_user, login_required
@@ -9,9 +11,9 @@ from flask_mail import Message
 from itsdangerous import URLSafeTimedSerializer
 from .email import send_email
 from . import Config
+from project import recaptcha
 
 auth = Blueprint('auth', __name__, url_prefix='/user')
-
 
 @auth.route('/login')
 def login():
@@ -20,9 +22,16 @@ def login():
 
 @auth.route('/login', methods=['POST'])
 def login_post():
+    if recaptcha.verify():
+        pass
+    else:
+        flash('Captcha is wrong.')
+        return redirect(url_for('auth.login'))
+
     email = request.form.get('email')
     password = request.form.get('password')
     remember = True if request.form.get('remember') else False
+
 
     user = User.query.filter_by(email=email).first()
     # check if user actually exists
@@ -67,7 +76,6 @@ def confirm_token(token, expiration=3600):
 
 @auth.route('/signup', methods=['POST'])
 def signup_post():
-
     email = request.form.get('email')
     name = request.form.get('name')
     password = request.form.get('password')
@@ -86,15 +94,19 @@ def signup_post():
                     registered_on=datetime.now(),
                     confirmed=False)
 
-    # add the new user to the database
-    db.session.add(new_user)
-    db.session.commit()
-
     token = generate_confirmation_token(new_user.email)
     confirm_url = url_for('auth.confirm_email', token=token, _external=True)
     html = render_template('activate.html', confirm_url=confirm_url)
     subject = "Please confirm your email"
-    send_email(new_user.email, subject, html)
+    try:
+        send_email(new_user.email, subject, html)
+    except SMTPException:
+        flash('We have some problems with sending emails. Please try again later :(')
+        return redirect(url_for('auth.signup'))
+
+    # add the new user to the database
+    db.session.add(new_user)
+    db.session.commit()
 
     login_user(new_user)
 
