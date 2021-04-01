@@ -183,11 +183,13 @@ def confirm_email(token):
         email = confirm_token(token)
     except:
         flash('The confirmation link is invalid or has expired.', 'danger')
+        redirect(url_for('auth.resend'))
 
     email = confirm_token(token)
     user = User.query.filter_by(email=email).first_or_404()
     if user.confirmed:
         flash('Account already confirmed. Please login.', 'success')
+        redirect(url_for('auth.login'))
     else:
         user.confirmed = True
         user.confirmed_on = datetime.now()
