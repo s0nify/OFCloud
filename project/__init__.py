@@ -1,34 +1,42 @@
+#!/usr/bin/env python
 # init.py
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_wtf.csrf import CSRFProtect
+
 from flask_mail import Mail
 from flask_recaptcha import ReCaptcha
+from flask_caching import Cache
 
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
 mail = Mail()
 recaptcha = ReCaptcha()
+cache = Cache()
 
 class Config:
     DEBUG = True
-    MAIL_SERVER = 'connect.smtp.bz'
+    MAIL_SERVER = 'smtp.mailtrap.io'
     MAIL_PORT = 2525
-    MAIL_USERNAME = 'givemeparachute@gmail.com'
-    MAIL_PASSWORD = 'H3io643IOibT'
+    MAIL_USERNAME = '23e6ab069203c2'
+    MAIL_PASSWORD = 'fdc75497d1430e'
     MAIL_USE_TLS = True
     MAIL_USE_SSL = False
     MAIL_DEFAULT_SENDER = 'no-reply@fapbox.cloud'
     SECRET_KEY = 'Njnh#a+:KY5k3D03kv~GWY|?`%+dtGO:bm3[rWwsCrS phQ9,q6UrQ(Ar? ;Ok3Z'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECURITY_PASSWORD_SALT = 'pizdaizhopa'
     RECAPTCHA_ENABLED = True
     RECAPTCHA_SITE_KEY = "6LdoOoIaAAAAALid0RSuJ1Mauhp-6pkj5_DWnXDo"
     RECAPTCHA_SECRET_KEY = "6LdoOoIaAAAAABXXAIqSciBicwECpRqN-hNeyO_h"
     RECAPTCHA_TYPE = "image"
     RECAPTCHA_RTABINDEX = 10
+    STATIC_CDN_BACKEND = "//cdn.fapbox.cloud"
+    CACHE_TYPE = "SimpleCache"  # Flask-Caching related configs
+    CACHE_DEFAULT_TIMEOUT = 300
 
 
 def create_app():
@@ -38,6 +46,7 @@ def create_app():
     mail.init_app(app)
     db.init_app(app)
     recaptcha.init_app(app)
+    cache.init_app(app)
 
     login_manager = LoginManager()
     ## Понять как сюда подставлять суффикс правильным образом
@@ -62,6 +71,9 @@ def create_app():
 
     # Защита страниц с авторизацией и логином
     csrf = CSRFProtect(app)
+
+    # Кэш
+    cache.init_app(app)
     return app
 
 

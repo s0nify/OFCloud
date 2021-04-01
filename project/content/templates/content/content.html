@@ -1,24 +1,22 @@
 <section class="gallery-block cards-gallery">
    <div class="container">
       <div class="row">
-         {% for n in dirs_list %}
+         {% for n in data %}
          <div class="col-md-6 col-lg-4">
             <div class="card border-0 transform-on-hover">
                <div class="item">
                   <a href="/photos/{{n}}">
+                      <div class="thumbnail">
                      {% if current_user.is_authenticated %}
-                     <div class="thumbnail">
+                         <img src="http://cdn.fapbox.cloud/thumbnail{{n}}/thumbnail.jpg" loading="lazy" href="/photos/{{n}}" alt="Watch content of {{n}}" class="card-img-top">
                      {% else %}
-                     <div class="thumbnail blur">
+                         <img src="http://cdn.fapbox.cloud/thumbnailblur{{n}}/thumbnail.jpg" loading="lazy" href="/photos/{{n}}" alt="Watch content of {{n}}" class="card-img-top">
                      {% endif %}
-                        <img src="http://135.181.9.250:84/resize_700x892/{{n}}/thumbnail.jpg" loading="lazy" href="/photos/{{n}}" alt="Watch content of {{n}}" class="card-img-top">
-                        <div class="description">
+                        <!--<img src="http://135.181.9.250:84/resize_700x892/{{n}}/thumbnail.jpg" loading="lazy" href="/photos/{{n}}" alt="Watch content of {{n}}" class="card-img-top">-->
+                                              <div class="description">
                            <span style="color:#fff!important;">{{n}}</span>
-                           {% if dirs_list[n]["videos"] is defined %}
-                  <a href="/videos/{{n}}"><i class="fas fa-video"> {{ dirs_list[n]["videos"] }} </i><a>{% endif %}
-                  <a href="/photos/{{n}}"><i class="far fa-images"> {{ dirs_list[n]["images"] }} </i><a>
                   </div>
-                  </div>
+                      </div>
                   </a>
                   <!--<div class="card-body">
                      <h6><a href="/photos/{{n}}">{{n}}<a></h6>
