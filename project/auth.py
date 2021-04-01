@@ -170,7 +170,7 @@ def signup_post():
     db.session.add(new_user)
     db.session.commit()
 
-    login_user(new_user)
+    #login_user(new_user)
 
     flash('A confirmation email has been sent via email.', 'success')
 
@@ -193,8 +193,8 @@ def confirm_email(token):
         user.confirmed_on = datetime.now()
         db.session.add(user)
         db.session.commit()
-        flash('You have confirmed your account. Thanks!', 'success')
-    return redirect(url_for('content.template_test'))
+        flash('You have confirmed your account. Please login.', 'success')
+    return redirect(url_for('auth.login'))
 
 
 @auth.route('/logout')
