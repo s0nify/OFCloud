@@ -1,5 +1,12 @@
 <section class="gallery-block cards-gallery">
    <div class="container">
+      {% with messages = get_flashed_messages() %}
+   {% if messages %}
+   <div class="alert alert-primary" role="alert">
+      {{ messages[0] }}
+   </div>
+   {% endif %}
+   {% endwith %}
       <div class="row">
          {% for n in data %}
          <div class="col-md-6 col-lg-4">
