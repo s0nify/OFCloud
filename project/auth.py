@@ -162,6 +162,7 @@ def signup_post():
     subject = "Please confirm your email"
     try:
         send_email(new_user.email, subject, html)
+        flash('A confirmation email has been sent via email.', 'success')
     except SMTPException:
         flash('We have some problems with sending emails. Please try again later :(')
         return redirect(url_for('auth.signup'))
@@ -171,8 +172,6 @@ def signup_post():
     db.session.commit()
 
     #login_user(new_user)
-
-    flash('A confirmation email has been sent via email.', 'success')
 
     return redirect(url_for('auth.login'))
 

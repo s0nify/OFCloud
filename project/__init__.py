@@ -18,11 +18,11 @@ cache = Cache()
 
 class Config:
     DEBUG = True
-    MAIL_SERVER = 'smtp.mailtrap.io'
-    MAIL_PORT = 2525
-    MAIL_USERNAME = '23e6ab069203c2'
-    MAIL_PASSWORD = 'fdc75497d1430e'
-    MAIL_USE_TLS = True
+    MAIL_SERVER = 'mailserver'
+    MAIL_PORT = 25
+    MAIL_USERNAME = 'no-reply@fapbox.cloud'
+    MAIL_PASSWORD = 'iAfXE7JeFh'
+    MAIL_USE_TLS = False
     MAIL_USE_SSL = False
     MAIL_DEFAULT_SENDER = 'no-reply@fapbox.cloud'
     SECRET_KEY = 'Njnh#a+:KY5k3D03kv~GWY|?`%+dtGO:bm3[rWwsCrS phQ9,q6UrQ(Ar? ;Ok3Z'
