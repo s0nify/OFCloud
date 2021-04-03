@@ -43,6 +43,15 @@ def create_app():
 
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object(Config)
+
+    ##
+    import logging
+    gunicorn_error_logger = logging.getLogger('gunicorn.error')
+    app.logger.handlers.extend(gunicorn_error_logger.handlers)
+    app.logger.setLevel(logging.DEBUG)
+    app.logger.debug('this will show in the log')
+    ##
+
     mail.init_app(app)
     db.init_app(app)
     recaptcha.init_app(app)
@@ -78,7 +87,5 @@ def create_app():
 
 
 if __name__ == '__main__':
-    import logging
 
-    logging.basicConfig(filename='error.log', level=logging.DEBUG)
     create_app()
