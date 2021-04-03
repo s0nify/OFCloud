@@ -161,7 +161,8 @@ def signup_post():
     html = render_template('activate.html', confirm_url=confirm_url)
     subject = "Please confirm your email"
     try:
-        send_email(new_user.email, subject, html)
+        maildebug = send_email(new_user.email, subject, html)
+        print(maildebug)
         flash('A confirmation email has been sent via email.', 'success')
     except SMTPException:
         flash('We have some problems with sending emails. Please try again later :(')
