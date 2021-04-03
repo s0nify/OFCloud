@@ -18,7 +18,7 @@ cache = Cache()
 
 class Config:
     DEBUG = True
-    MAIL_SERVER = 'mailserver'
+    MAIL_SERVER = 'fapbox.cloud'
     MAIL_PORT = 25
     MAIL_USERNAME = 'no-reply@fapbox.cloud'
     MAIL_PASSWORD = 'iAfXE7JeFh'
@@ -78,4 +78,7 @@ def create_app():
 
 
 if __name__ == '__main__':
+    import logging
+
+    logging.basicConfig(filename='error.log', level=logging.DEBUG)
     create_app()
