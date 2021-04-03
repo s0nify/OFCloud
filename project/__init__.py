@@ -10,6 +10,9 @@ from flask_mail import Mail
 from flask_recaptcha import ReCaptcha
 from flask_caching import Cache
 import logging
+
+logging.basicConfig(filename='./applog.log', level=logging.DEBUG)
+
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
 mail = Mail()
@@ -80,9 +83,3 @@ def create_app():
 if __name__ == '__main__':
 
     create_app()
-
-if __name__ != '__main__':
-    app = create_app()
-    gunicorn_logger = logging.getLogger('gunicorn.error')
-    app.logger.handlers = gunicorn_logger.handlers
-    app.logger.setLevel(gunicorn_logger.level)
