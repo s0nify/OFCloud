@@ -44,10 +44,6 @@ def create_app():
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object(Config)
 
-    stream_handler = logging.StreamHandler()
-    stream_handler.setLevel(logging.ERROR)
-    app.logger.addHandler(stream_handler)
-
     mail.init_app(app)
     db.init_app(app)
     recaptcha.init_app(app)
@@ -84,3 +80,9 @@ def create_app():
 if __name__ == '__main__':
 
     create_app()
+
+if __name__ != '__main__':
+    app = create_app()
+    gunicorn_logger = logging.getLogger('gunicorn.error')
+    app.logger.handlers = gunicorn_logger.handlers
+    app.logger.setLevel(gunicorn_logger.level)
