@@ -139,7 +139,7 @@
 				<div class="row"> {% for n in images %}
 					<div class="col-md-6 col-lg-4 item">
 						<div class="thumbnail">
-							<a href="{{n['fullimage']}}" class="glightbox1" data-type="image" data-gallery="gallery1"> <img src="{{n['thumbimage']}}" alt="image" /> </a>
+							<a href="{{n['fullimage']}}" class="glightbox1" data-type="image" data-gallery="gallery1"> <img src="{{n['thumbimage']}}" loading="lazy" alt="image" /> </a>
 						</div>
 					</div> {% endfor %} </div> {{ pagination.links }} </div>
 		</section>

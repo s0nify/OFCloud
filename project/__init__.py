@@ -24,9 +24,9 @@ class Config:
     MAIL_SERVER = 'fapbox.cloud'
     MAIL_PORT = 25
     MAIL_USERNAME = 'no-reply@fapbox.cloud'
-    MAIL_PASSWORD = 'iAfXE7JeFh'
+    MAIL_PASSWORD = '6Xte9AiaD4'
     MAIL_USE_TLS = False
-    MAIL_USE_SSL = False
+    MAIL_USE_SSL = True
     MAIL_DEFAULT_SENDER = 'no-reply@fapbox.cloud'
     SECRET_KEY = 'Njnh#a+:KY5k3D03kv~GWY|?`%+dtGO:bm3[rWwsCrS phQ9,q6UrQ(Ar? ;Ok3Z'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite'
@@ -38,7 +38,9 @@ class Config:
     RECAPTCHA_TYPE = "image"
     RECAPTCHA_RTABINDEX = 10
     STATIC_CDN_BACKEND = "//cdn.fapbox.cloud"
-    CACHE_TYPE = "SimpleCache"  # Flask-Caching related configs
+    #CACHE_TYPE = "SimpleCache"  # Flask-Caching related configs
+    CACHE_TYPE = "Redis"
+    CACHE_REDIS_HOST = "redis"
     CACHE_DEFAULT_TIMEOUT = 300
 
 

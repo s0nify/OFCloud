@@ -1,1 +1,305 @@
 INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:12:37] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:12:45] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:12:45] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:12:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:15:20] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:16:50] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:16:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:16:57] "[37mGET /user/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:16:58] "[33mGET /docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:17:06] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:17:06] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/katerinas' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/katerinas' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//katerinas/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/katerinas'
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/katerinas'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:17:13] "[37mGET /photos/katerinas HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:17:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/katerinas' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:17:42] "[37mGET /photos/katerinas HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/katerinas' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:17:59] "[37mGET /photos/katerinas?page=3 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:18:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:19:37] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//adelinebri/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:19:38] "[37mGET /photos/adelinebri HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:19:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:19:50] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:21:46] "[37mGET /photos/adelinebri HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//adelinebri/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:21:57] "[37mGET /photos/adelinebri HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:22:33] "[37mGET /photos/adelinebri HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//adelinebri/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:22:42] "[37mGET /photos/adelinebri HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:23:22] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//kroll/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/kroll'
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/kroll'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:23:29] "[37mGET /photos/kroll HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:23:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+ERROR:project:Exception on /photos/kroll [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/content.py", line 23, in my_view_content
+    images_from_func = filesfromfolder("/ap4uklor/" + path)['images']
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_caching/__init__.py", line 475, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 47, in filesfromfolder
+    dirfiles = showfiles(path)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_caching/__init__.py", line 475, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 34, in showfiles
+    data = getfromcdn()
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 9, in getfromcdn
+    url = r"https://storage.bunnycdn.com" + path
+NameError: name 'path' is not defined
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:26:40] "[35m[1mGET /photos/kroll HTTP/1.1[0m" 500 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+ERROR:project:Exception on /photos/kroll [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/content.py", line 23, in my_view_content
+    images_from_func = filesfromfolder("/ap4uklor/" + path)['images']
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_caching/__init__.py", line 475, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 47, in filesfromfolder
+    dirfiles = showfiles(path)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_caching/__init__.py", line 475, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 34, in showfiles
+    data = getfromcdn()
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 9, in getfromcdn
+    url = r"https://storage.bunnycdn.com" + path
+NameError: name 'path' is not defined
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:26:41] "[35m[1mGET /photos/kroll HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+ERROR:project:Exception on /photos/kroll [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/content.py", line 23, in my_view_content
+    images_from_func = filesfromfolder("/ap4uklor/" + path)['images']
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_caching/__init__.py", line 475, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 47, in filesfromfolder
+    dirfiles = showfiles(path)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_caching/__init__.py", line 475, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 34, in showfiles
+    data = getfromcdn()
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 9, in getfromcdn
+    url = r"https://storage.bunnycdn.com" + path
+NameError: name 'path' is not defined
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:26:58] "[35m[1mGET /photos/kroll HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//kroll/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/kroll'
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/kroll'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:27:33] "[37mGET /photos/kroll HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+ERROR:project:Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/content.py", line 14, in template_test
+    data = opendir()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_caching/__init__.py", line 475, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 22, in opendir
+    data = getfromcdn()
+  File "/Users/sonify/PycharmProjects/OFCloud/project/content/bunnycdnapi.py", line 9, in getfromcdn
+    url = r"https://storage.bunnycdn.com" + path
+NameError: name 'path' is not defined
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:27:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:28:20] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//adelinebri/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:28:22] "[37mGET /photos/adelinebri HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//adelinebri/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:33:32] "[37mGET /photos/adelinebri HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:34:45] "[37mGET /photos/adelinebri HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:34:50] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:36:49] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adiraallure' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//adiraallure/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adiraallure'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:36:52] "[37mGET /photos/adiraallure HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:37:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:37:09] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//kroll/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/kroll'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:37:23] "[37mGET /photos/kroll HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adiraallure' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//adiraallure/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adiraallure'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:39:26] "[37mGET /photos/adiraallure HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:39:38] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:40:35] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:41:57] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//kroll/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/kroll'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:43:54] "[37mGET /photos/kroll HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:43:58] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/adelinebri' -> miss 
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.bunnycdn.com:443
+DEBUG:urllib3.connectionpool:https://storage.bunnycdn.com:443 "GET /ap4uklor//adelinebri/ HTTP/1.1" 200 None
+DEBUG:flask_caching.backends.simplecache:set key 'view//photos/adelinebri'
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:44:05] "[37mGET /photos/adelinebri HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:44:07] "[37mGET / HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//photos/kroll' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:44:14] "[37mGET /photos/kroll HTTP/1.1[0m" 200 -
+DEBUG:flask_caching.backends.simplecache:get key 'view//' -> hit 
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2021 14:45:41] "[37mGET / HTTP/1.1[0m" 200 -

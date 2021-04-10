@@ -30,7 +30,7 @@ def my_view_content(name):
         thumbimage = current_app.config["STATIC_CDN_BACKEND"] + securepath("/thumbimg" + path + i)
         images.append({ 'fullimage' : fullimage, 'thumbimage' : thumbimage })
 
-    per_page = 60
+    per_page = 30
     total = len(images)
     # Количество отображаемых изображений на странице
 
